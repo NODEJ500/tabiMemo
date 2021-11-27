@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A32F32EE0D02FF2F52114162 /* Pods_tabiMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C97A9B2D17347CA0ED02102 /* Pods_tabiMemo.framework */; };
 		BFFC626B2750DCE00025B21A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFC626A2750DCE00025B21A /* AppDelegate.swift */; };
 		BFFC626D2750DCE00025B21A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFC626C2750DCE00025B21A /* SceneDelegate.swift */; };
 		BFFC626F2750DCE00025B21A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFC626E2750DCE00025B21A /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C97A9B2D17347CA0ED02102 /* Pods_tabiMemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tabiMemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFFC62672750DCE00025B21A /* tabiMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tabiMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFFC626A2750DCE00025B21A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFFC626C2750DCE00025B21A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		BFFC62732750DCE10025B21A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFFC62762750DCE10025B21A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFFC62782750DCE10025B21A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFD8D6D2560696F43E1BE8A3 /* Pods-tabiMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tabiMemo.release.xcconfig"; path = "Target Support Files/Pods-tabiMemo/Pods-tabiMemo.release.xcconfig"; sourceTree = "<group>"; };
+		E7015B1BE82B65A99D5AC9D0 /* Pods-tabiMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tabiMemo.debug.xcconfig"; path = "Target Support Files/Pods-tabiMemo/Pods-tabiMemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A32F32EE0D02FF2F52114162 /* Pods_tabiMemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8DDC7910928698E88D4EC1A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7015B1BE82B65A99D5AC9D0 /* Pods-tabiMemo.debug.xcconfig */,
+				DFD8D6D2560696F43E1BE8A3 /* Pods-tabiMemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BFFC625E2750DCE00025B21A = {
 			isa = PBXGroup;
 			children = (
 				BFFC62692750DCE00025B21A /* tabiMemo */,
 				BFFC62682750DCE00025B21A /* Products */,
+				8DDC7910928698E88D4EC1A8 /* Pods */,
+				D16AD3369C7B562D571BC658 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = tabiMemo;
 			sourceTree = "<group>";
 		};
+		D16AD3369C7B562D571BC658 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C97A9B2D17347CA0ED02102 /* Pods_tabiMemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFFC627B2750DCE10025B21A /* Build configuration list for PBXNativeTarget "tabiMemo" */;
 			buildPhases = (
+				25A73723A2C938508C1CB103 /* [CP] Check Pods Manifest.lock */,
 				BFFC62632750DCE00025B21A /* Sources */,
 				BFFC62642750DCE00025B21A /* Frameworks */,
 				BFFC62652750DCE00025B21A /* Resources */,
+				80F08E7D13DAC68F7B688E40 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25A73723A2C938508C1CB103 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tabiMemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80F08E7D13DAC68F7B688E40 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tabiMemo/Pods-tabiMemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tabiMemo/Pods-tabiMemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tabiMemo/Pods-tabiMemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BFFC62632750DCE00025B21A /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		BFFC627C2750DCE10025B21A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7015B1BE82B65A99D5AC9D0 /* Pods-tabiMemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,16 +372,17 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tabiMemo.tabiMemo;
+				PRODUCT_BUNDLE_IDENTIFIER = tabiMemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		BFFC627D2750DCE10025B21A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFD8D6D2560696F43E1BE8A3 /* Pods-tabiMemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -330,11 +401,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tabiMemo.tabiMemo;
+				PRODUCT_BUNDLE_IDENTIFIER = tabiMemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
