@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A32F32EE0D02FF2F52114162 /* Pods_tabiMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C97A9B2D17347CA0ED02102 /* Pods_tabiMemo.framework */; };
+		BF71D4CA27524C2F00B407AD /* inputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF71D4C927524C2F00B407AD /* inputViewController.swift */; };
+		BF71D4CC275255A200B407AD /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF71D4CB275255A200B407AD /* API.swift */; };
 		BFFC626B2750DCE00025B21A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFC626A2750DCE00025B21A /* AppDelegate.swift */; };
 		BFFC626D2750DCE00025B21A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFC626C2750DCE00025B21A /* SceneDelegate.swift */; };
 		BFFC626F2750DCE00025B21A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFC626E2750DCE00025B21A /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		6C97A9B2D17347CA0ED02102 /* Pods_tabiMemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tabiMemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF71D4C927524C2F00B407AD /* inputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inputViewController.swift; sourceTree = "<group>"; };
+		BF71D4CB275255A200B407AD /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		BFFC62672750DCE00025B21A /* tabiMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tabiMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFFC626A2750DCE00025B21A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFFC626C2750DCE00025B21A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +52,6 @@
 				E7015B1BE82B65A99D5AC9D0 /* Pods-tabiMemo.debug.xcconfig */,
 				DFD8D6D2560696F43E1BE8A3 /* Pods-tabiMemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -76,6 +79,8 @@
 				BFFC626A2750DCE00025B21A /* AppDelegate.swift */,
 				BFFC626C2750DCE00025B21A /* SceneDelegate.swift */,
 				BFFC626E2750DCE00025B21A /* ViewController.swift */,
+				BF71D4C927524C2F00B407AD /* inputViewController.swift */,
+				BF71D4CB275255A200B407AD /* API.swift */,
 				BFFC62702750DCE00025B21A /* Main.storyboard */,
 				BFFC62732750DCE10025B21A /* Assets.xcassets */,
 				BFFC62752750DCE10025B21A /* LaunchScreen.storyboard */,
@@ -210,6 +215,8 @@
 				BFFC626F2750DCE00025B21A /* ViewController.swift in Sources */,
 				BFFC626B2750DCE00025B21A /* AppDelegate.swift in Sources */,
 				BFFC626D2750DCE00025B21A /* SceneDelegate.swift in Sources */,
+				BF71D4CA27524C2F00B407AD /* inputViewController.swift in Sources */,
+				BF71D4CC275255A200B407AD /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
